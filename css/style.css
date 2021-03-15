@@ -1,0 +1,1248 @@
+*, *:before, *:after{ 
+    box-sizing: border-box; 
+} 
+
+/**  *****  Body CSS  *****/
+body {
+    font-family: 'Roboto';
+    font-size: 100%;
+    background-color: snow;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+	background-color: #ffffff;
+	overflow: hidden;
+}
+
+/*  Style the links inside the navigation bar */
+.topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;	
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+  
+/* Add an active class to highlight the current page */
+.topnav a.active {
+	background-color: #277bbf;
+	color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+	display: none;
+}
+
+/*  previous color was: #277bbf then #009933*/ 
+#modal-btn {
+	display: block;
+	background-color: #ac2b26;
+	color: white;
+	border: none;
+	height: 75px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 10px;
+	cursor: pointer;
+	border: none;
+}
+
+#modal-btn span {
+	display: block;
+}
+
+#modal-btn:focus {
+	outline: 0px;
+}
+
+.site-button {
+	display: inline-block;
+	background-color: #277bbf;
+	color: white;
+	border: none;
+	height: 40px;
+	padding: 10px 10px;
+	cursor: pointer;
+}
+
+.hr-wide {
+	width: 50%;
+	margin: 25px auto 25px auto;
+}
+
+video {
+	display: flex;
+}
+
+h1, h2, h3 {
+	color:#001a4d;
+}
+
+p {
+	font-weight: 600;
+	line-height: initial;
+	color:#001a4d;
+}
+
+.red {
+	color: red;
+	font-weight: bold;
+}
+
+.green {
+	color:#007627;
+}
+
+/**  ***** RWD Section *****/
+.row {
+    width: 100%;
+	margin-bottom: 20px;
+}
+
+.secondary-content {
+	display: flex;
+}
+
+.secondary-aside {
+	float: left;
+	width: 33.33%;
+}
+
+.secondary-video-container {
+	float: left;
+	width: 66.66%
+}
+
+/***** Small Devices Only (Phone) *****/
+@media (max-width: 767px) {
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+		float: left;
+		border: 1px;
+	}
+	
+	.col-sm-1 {
+	width: 8.33%;
+	}
+	.col-sm-2 {
+	width: 16.66%;
+	}
+	.col-sm-3 {
+	width: 25%;
+	}
+	.col-sm-4 {
+	width: 33.33%;
+	}
+	.col-sm-5 {
+	width: 41.66%;
+	}
+	.col-sm-6 {
+	width: 50%;
+	}
+	.col-sm-7 {
+	width: 58.33%;
+	}
+	.col-sm-8 {
+	width: 66.66%;
+	}
+	.col-sm-9 {
+	width: 75%;
+	}
+	.col-sm-10 {
+	width: 83.33%;
+	}
+	.col-sm-11 {
+	width: 91.66%;
+	}
+	.col-sm-12 {
+	width: 100%;
+	}
+	
+	#banner-photos {
+	display: none;
+	}
+	
+	/* 100% Image Width on Smaller Screens */
+	@media only screen and (max-width: 700px){
+		.modal-content {
+		width: 100%;
+		}
+	}
+	
+	.box-logo {
+	height: 200px;
+	}
+	
+	.box-logo-text {
+	display: hidden
+	}
+
+	.left-col {
+	position: relative;
+	padding: 10px 0px 20px;
+	}
+
+	.center-col {
+	position: relative;
+	padding: 10px 0px 20px;
+	}
+
+	.right-col {
+	position: relative;
+	padding: 10px 0px 20px;
+	}
+	
+	.testimonial video {
+		width: 100%;
+		margin: 10px 0 10px 0;
+	}
+
+	.secondary-content {
+		display: block;
+	}
+
+	.secondary-aside {
+		float: left;
+		width: 100%;
+	}
+	
+	.secondary-video-container {
+		float: left;
+		width: 100%
+	}
+}
+    
+/***** Medium Devices Only (Tablet) *****/
+@media (min-width: 768px) and (max-width: 1200px) {
+	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+		float: left;
+		border: 1px;
+	}
+	.col-md-1 {
+		width: 8.33%;
+	}
+	.col-md-2 {
+		width: 16.66%;
+	}
+	.col-md-3 {
+		width: 25%;
+	}
+	.col-md-4 {
+		width: 33.33%;
+	}
+	.col-md-5 {
+		width: 41.66%;
+	}
+	.col-md-6 {
+		width: 50%;
+	}
+	.col-md-7 {
+		width: 58.33%;
+	}
+	.col-md-8 {
+		width: 66.66%;
+	}
+	.col-md-9 {
+		width: 75%;
+	}
+	.col-md-10 {
+		width: 83.33%;
+	}
+	.col-md-11 {
+		width: 91.66%;
+	}
+	.col-md-12 {
+		width: 100%;
+	}
+
+	.left-col {
+	position: relative;
+	padding: 10px 8px 20px 0px;
+	}
+
+	.center-col {
+	position: relative;
+	padding: 10px 4px 20px 4px;
+	}
+
+	.right-col {
+	position: relative;
+	padding: 10px 0px 20px 8px;
+	}
+	
+	.components-text-box-1 {
+	clear:both;
+	min-height: 260px;
+	}
+	
+	.components-text-box-2 {
+	clear:both;
+	min-height: 265px;
+	}
+
+	.testimonial video{
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 4em;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #001a4d;
+	}
+	
+	.about-text-box-1 {
+	clear:both;
+	min-height: 350px;
+	max-height: 350px;
+	overflow: scroll;
+	}
+	
+	.about-text-box-2 {
+	clear:both;
+	min-height: 150px;
+	max-height: 150px;
+	}
+	
+	.layout-container {
+	max-width: 98%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+	.layout-content {
+	max-width: 98%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+	.secondary-content {
+		display: block;
+	}
+
+	.secondary-aside {
+		width: 100%;
+	}
+	
+	.secondary-video-container {
+		width: 100%
+	}
+}
+
+/***** Nav Bar Media queries  *****/
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1199px) {
+	.topnav li {display: none;}
+	.topnav a.icon {
+		float: right;
+		display: block;
+	}
+	.topnav {
+		display: block;
+		background-color: #277bbf;
+	}
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1199px) {
+	.topnav.responsive {
+		position: relative;
+		background-color: #ddd;
+	}
+	.topnav.responsive a.icon{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive li {
+		clear: both;
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	.topnav.responsive a {
+		text-align: left;
+	}
+}
+
+/***** Non HD (Desktop)  *****/
+@media (min-width: 1200px) and (max-width: 1365px) {
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+        float: left;
+        border: 1px;
+    }
+    .col-lg-1 {
+        width: 8.33%;
+    }
+    .col-lg-2 {
+    width: 16.66%;
+    }
+    .col-lg-3 {
+    width: 25%;
+    }
+    .col-lg-4 {
+    width: 33.33%;
+    }
+    .col-lg-5 {
+    width: 41.66%;
+    }
+    .col-lg-6 {
+    width: 50%;
+    }
+    .col-lg-7 {
+    width: 58.33%;
+    }
+    .col-lg-8 {
+    width: 66.66%;
+    }
+    .col-lg-9 {
+    width: 75%;
+    }
+    .col-lg-10 {
+    width: 83.33%;
+    }
+    .col-lg-11 {
+    width: 91.66%;
+    }
+    .col-lg-12 {
+    width: 100%;
+    }
+	
+	.layout-container {
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+	.layout-content {
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+	#nav-item-1 {
+		width: 6%;
+	}
+	
+	/*#nav-item-1 a {
+		padding-left: 5px;
+	} */
+	
+	#nav-item-2 {
+		width: 6%;
+	}
+	
+	#nav-item-3 {
+		width: 14%;
+	}
+	
+	#nav-item-4 {
+		width: 17%;
+	}
+	
+	#nav-item-5 {
+		width: 18%;
+	}
+	
+	#nav-item-6 {
+		width: 16%;
+	}
+	
+	#nav-item-7 {
+		width: 10%;
+	}
+	
+	#nav-item-8 {
+		width: 6%;
+	}
+	
+	#nav-item-9 {
+		width: 7%;
+	}
+		
+	/*.box-logo {
+	height: 250px;
+	}
+	
+	.box-logo-text {
+	height: 125px;
+	}*/
+
+	.left-col {
+	position: relative;
+	padding: 10px 8px 20px 0px;
+	}
+
+	.center-col {
+	position: relative;
+	padding: 10px 4px 20px 4px;
+	}
+
+	.right-col {
+	position: relative;
+	padding: 10px 0px 20px 8px;
+	}
+	
+	.components-text-box-1 {
+	clear:both;
+	min-height: 185px;
+	}
+	
+	.components-text-box-2 {
+	clear:both;
+	min-height: 185px;
+	}
+
+	.testimonial video{
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 4em;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #001a4d;
+	}
+		
+	.about-text-box-1 {
+	clear:both;
+	min-height: 350px;
+	max-height: 350px;
+	overflow: scroll;
+	}
+	
+	.about-text-box-2 {
+	clear:both;
+	min-height: 120px;
+	max-height: 120px;
+	}
+
+	/**  Used in the about Page  */	
+	.bio-box {
+	position: relative;
+	}
+	
+	.bottom-right {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	padding: 0 10px 10px; 
+	}
+
+	.top-right {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	padding: 10px 10px 0;
+	font-weight: 600;
+	}
+	
+}
+    
+/***** Large Devices HD Only (Desktop)  *****/
+@media (min-width: 1366px) {
+    .col-lghd-1, .col-lghd-2, .col-lghd-3, .col-lghd-4, .col-lghd-5, .col-lghd-6, .col-lghd-7, .col-lghd-8, .col-lghd-9, .col-lghd-10, .col-lghd-11, .col-lghd-12 {
+        float: left;
+        border: 1px;
+    }
+    .col-lghd-1 {
+        width: 8.33%;
+    }
+    .col-lghd-2 {
+    width: 16.66%;
+    }
+    .col-lghd-3 {
+    width: 25%;
+    }
+    .col-lghd-4 {
+    width: 33.33%;
+    }
+    .col-lghd-5 {
+    width: 41.66%;
+    }
+    .col-lghd-6 {
+    width: 50%;
+    }
+    .col-lghd-7 {
+    width: 58.33%;
+    }
+    .col-lghd-8 {
+    width: 66.66%;
+    }
+    .col-lghd-9 {
+    width: 75%;
+    }
+    .col-lghd-10 {
+    width: 83.33%;
+    }
+    .col-lghd-11 {
+    width: 91.66%;
+    }
+    .col-lghd-12 {
+    width: 100%;
+    }
+	
+	.layout-container {
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+	.layout-content {
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+	#nav-item-1 {
+		width: 6%;
+	}
+	
+	/*#nav-item-1 a {
+		padding-left: 5px;
+	} */
+	
+	#nav-item-2 {
+		width: 6%;
+	}
+	
+	#nav-item-3 {
+		width: 14%;
+	}
+	
+	#nav-item-4 {
+		width: 17%;
+	}
+	
+	#nav-item-5 {
+		width: 18%;
+	}
+	
+	#nav-item-6 {
+		width: 16%;
+	}
+	
+	#nav-item-7 {
+		width: 10%;
+	}
+	
+	#nav-item-8 {
+		width: 6%;
+	}
+	
+	#nav-item-9 {
+		width: 7%;
+	}
+		
+	/*.box-logo {
+	height: 250px;
+	}
+	
+	.box-logo-text {
+	height: 125px;
+	}*/
+
+	#additional-margin {
+		margin-top: 20px;
+	}
+
+	.left-col {
+	position: relative;
+	padding: 10px 8px 20px 0px;
+	}
+
+	.center-col {
+	position: relative;
+	padding: 10px 4px 20px 4px;
+	}
+
+	.right-col {
+	position: relative;
+	padding: 10px 0px 20px 8px;
+	}
+	
+	.components-text-box-1 {
+	clear:both;
+	min-height: 165px;
+	}
+	
+	.components-text-box-2 {
+	clear:both;
+	min-height: 185px;
+	}
+
+	.testimonial video{
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 4em;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #001a4d;
+	}
+	
+	.about-text-box-1 {
+	clear:both;
+	min-height: 350px;
+	max-height: 350px;
+	overflow: scroll;
+	}
+	
+	.about-text-box-2 {
+	clear:both;
+	min-height: 100px;
+	max-height: 100px;
+	}
+
+	/**  Used in the about Page  */	
+	.bio-box {
+	position: relative;
+	}
+	
+	.bottom-right {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	padding: 0 10px 10px; 
+	}
+
+	.top-right {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	padding: 10px 10px 0;
+	font-weight: 600;
+	}	
+}
+
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.container {
+	display: flow-root;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  background-color: #FFF;
+}
+
+.flex-column {
+	flex-flow: column;
+	float: left;
+}
+
+.flex-col-center {
+	display: flex;
+	flex: 1;
+
+}
+
+.flex-row {
+	flex-flow: row;	
+}
+
+.flex-container {
+	display: flex;
+}
+
+.logo {
+	/**  width: 40%;	*/
+	width: 100%;
+	height:100%;
+	padding: 0px 0px 0px 0px;
+}
+
+.logo img{
+	width: 100%;
+}
+
+#banner-photo-1 {
+	width: 100%;
+}
+
+#banner-photo-2 {
+	width: 100%;
+}
+
+#banner-photo-3 {
+	width: 100%;
+}
+
+/******
+**		Navigation CSS
+******/
+.nav-menu {
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.nav-menu ul {
+	justify-content: center;
+}
+
+.nav-menu li {
+	float: left;
+}
+
+.nav-menu a {
+	display: block;
+	font-weight: 800;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover:not(.active) {
+	background-color: #eee;
+}
+
+.active {
+	background-color: #001a4d;
+}
+
+.section {
+	background-color: #f2f2f2;
+}
+
+/******
+**		Main Content - Home
+******/
+
+.main {
+	min-height: 400px;
+}
+
+.main h1 {
+	text-align: center;
+	margin: 40px 0 0 0;
+	padding: 40px 0 40px 0;
+}
+
+.main h2 {
+	padding: 20px 0;
+}
+
+.model-container p{
+	font-weight: 600;
+	padding: 0px 0 20px 10px;
+	text-align: left;
+}
+
+#model-image video {
+	float: right;
+	width: 100%;
+	height: auto;
+	padding: 0 20px 20px 20px;
+}
+
+#model-image image {
+	float: right;
+	width: 100%;
+	height: auto;
+	padding: 0 20px 20px 20px;
+
+}
+
+/*!
+ * Many thanks to Mr. Ferdinandi for his modal css, js and markup. -Dan
+ * Modals v10.1.2: Simple modal dialogue pop-up windows
+ * (c) 2017 Chris Ferdinandi
+ * MIT License
+ * http://github.com/cferdinandi/modals
+ */
+
+/**
+ * Modal windows
+ */
+/* line 4, /Users/cferdinandi/Sites/modals/src/sass/components/_modals.scss */
+.modal {
+	background-color: #ffffff;
+	border: 0.0725em solid #e5e5e5;
+	border-radius: 0.0725em;
+	box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.3);
+	display: none;
+	max-width: 100%;
+	padding: 0.5em 1em;
+	visibility: hidden;
+	z-index: 9999;
+}
+  
+@media (min-width: 40em) {
+	/* line 4, /Users/cferdinandi/Sites/modals/src/sass/components/_modals.scss */
+	.modal {
+	  max-width: 98%;
+	}
+}
+  
+/* line 19, /Users/cferdinandi/Sites/modals/src/sass/components/_modals.scss */
+.modal.active {
+	display: block;
+	width:78%;
+	height: auto;
+	left: 0;
+	max-height: 100%;
+	overflow: auto;
+	position: fixed;
+	right: 0;
+	top: 0;
+	visibility: visible;
+	-webkit-overflow-scrolling: touch;
+}
+  
+@media (min-width: 30em) {
+	/* line 19, /Users/cferdinandi/Sites/modals/src/sass/components/_modals.scss */
+	.modal.active {
+	  height: auto;
+	  left: 3%;
+	  margin-left: auto;
+	  margin-right: auto;
+	  right: 3%;
+	  top: 10px;
+	}
+}
+  
+@media (min-width: 40em) {
+	/* line 19, /Users/cferdinandi/Sites/modals/src/sass/components/_modals.scss */
+	.modal.active {
+	  left: 8%;
+	  right: 8%;
+	}
+	/* line 44, /Users/cferdinandi/Sites/modals/src/sass/components/_modals.scss */
+	.modal.active.modal-medium {
+	  width: 35em;
+	}
+	/* line 48, /Users/cferdinandi/Sites/modals/src/sass/components/_modals.scss */
+	.modal.active.modal-small {
+	  width: 25em;
+	}
+}
+  
+  /* line 54, /Users/cferdinandi/Sites/modals/src/sass/components/_modals.scss */
+.modal:focus {
+	outline: none;
+}
+  
+/**
+ * Modal background
+*/
+/* line 63, /Users/cferdinandi/Sites/modals/src/sass/components/_modals.scss */
+.modal-bg {
+	background-color: #272727;
+	bottom: 0;
+	position: fixed;
+	left: 0;
+	opacity: .9;
+	right: 0;
+	top: 0;
+	z-index: 9998;
+}
+  
+/**
+  * Close button
+*/
+/* line 78, /Users/cferdinandi/Sites/modals/src/sass/components/_modals.scss */
+.close {
+	color: red;
+	cursor: pointer;
+	float: right;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+  
+/* line 86, /Users/cferdinandi/Sites/modals/src/sass/components/_modals.scss */
+.close:hover {
+	color: #5a5a5a;
+	cursor: pointer;
+}
+
+.modal.active video {
+	width: 95%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.model-components {
+	background-color: #f2f2f2;
+	margin: 0px 0 20px 0;
+}
+
+.model-components h2{
+	text-align: left;
+	margin-bottom: 30px;
+	padding: 20px 0;
+}
+
+.model-components img {
+	width: 60%;
+	height: auto;
+}
+
+.model-components p {
+	width: 97%;
+	font-weight: 600;
+	padding: 20px 5px 5px 5px;
+	text-align: left;
+	clear: both;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.model-components a{
+	float: left;
+}
+
+.left-col p {
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-top:10px;
+}
+
+.center-col p {
+	padding: 10px 5px 20px;
+}
+
+.right-col p {
+	padding-left: 10px;
+	padding-bottom: 20px;
+	padding-top:10px;
+}
+
+.testimonial video {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*******
+**  	Footer CSS
+******/
+
+.sponsors img {
+		height: 100px;
+		width: auto;
+}
+
+.footer {
+	background-color: #f2f2f2;
+}
+
+.footer-logo img {
+margin-top: 30px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 50px;
+width: 300px;
+height: auto;
+}
+	
+.sponsors {
+	margin-bottom: 50px;
+}
+
+.sponsor1 {
+	width: 33.3%;
+}
+
+.sponsor2 {
+	width: 33.3%;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px; 
+}
+
+.flex-center a span{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px; 
+}
+
+.contact-us {
+	width:33.3%;
+}
+
+.contact-us a {
+	text-decoration: none;
+}
+
+.contact-us span{
+	height: 60px;
+}
+
+/******
+**		Secondary pages CSS
+******/
+
+.secondary-header {
+	padding-top: 20px;
+}
+
+.secondary-header-text {
+	width: 70%;
+}
+
+.secondary-header h1 {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+.secondary-header-text p {
+	font-weight: 600;
+}
+
+.secondary-header-img {
+	float: right;
+	width: 30%;
+}
+
+.secondary-header img {
+	margin: 0 auto 0 auto;
+}
+
+.secondary-aside h2 {
+	margin: 0.5em 0 .5em .25em;
+	padding: 0;
+}
+
+.secondary-aside a {
+	font-weight: 600;
+}
+
+.toolkit {
+	min-height: 200px;
+}
+
+.toolkit ul {
+	list-style: none;
+}
+
+.toolkit  a {
+	display: block;
+	color: black;
+	padding: .25em;
+	text-decoration: none;
+}
+
+.toolkit-teaser {
+	margin: 10px 0 10px;
+}
+
+.toolkit-teaser h3{
+	margin: 0.5em 0 .5em .25em;
+}
+.secondary-video video {
+	margin: 1em 0 0 0;
+	width: 100%;
+	height: auto;
+}
+
+.bio {
+	position: relative;
+}
+
+.bio-image img {
+	margin-left: auto;
+	margin-right: auto;
+	height: 300px;
+	width:  250px;
+	object-fit: cover;
+}
+
+.sponsor-image img {
+	margin-left: auto;
+	margin-right: auto;
+	height: 150px;
+	width:  auto;
+}
+
+.bio hr {
+	margin: 20px 0 40px;
+}
+
+.bio-name p {
+	font-size: 1.5em;
+	font-weight: 900;
+	text-align: center
+}
+
+.bio-text {
+	margin: 2px;
+}
+
+.about-text-box-2 p {
+	padding: 0 5px 0 5px;
+}
+
+.bio-link {
+	margin: 30px 0px;
+}
+
+.bio-link span {
+	margin-left: auto;
+	margin-right: 2px;
+}
+
+/*****
+**  Contact Page
+*****/
+.contact-header-text {
+	width: 100%;
+}
+
+.contact-header-text > h1{
+	text-align: center;
+	padding: 0px;
+}
+
+.contact-header-text > h2{
+	text-align: center;
+	padding: 0px;
+}
+
+.contact-form {
+	flex-flow: column;
+}
+
+label {
+	font-weight: 600;
+	color: #001a4d;
+}
+
+/*****
+**  Thank You page
+*****/
+.thank-you p {
+	text-align: center;
+}
+
+
+
+
+
+
